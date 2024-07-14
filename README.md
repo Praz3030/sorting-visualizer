@@ -24,3 +24,5 @@ git clone: https://github.com/Praz3030/sorting-visualizer.git </br>
 Open index.html in your web browser.
 
 Adjust the array size using the slider, choose an algorithm from the buttons, and click "Generate New Array!" to visualize sorting.
+
+-Prasad Borkar
