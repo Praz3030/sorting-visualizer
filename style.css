@@ -1,0 +1,208 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+nav {
+  background-color: #000;
+  color: white;
+  display: grid;
+  grid-template-columns: 30% 60%;
+  column-gap: 10%;
+  padding: 0% 5%;
+  border: 2px solid #39ff14;
+  box-shadow: 0 0 10px #39ff14;
+}
+
+nav .array-inputs {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  place-content: center;
+  padding: 5% 0%;
+}
+
+nav .array-inputs #a_size {
+  padding: 5% 0%;
+}
+
+nav .array-inputs #a_speed {
+  padding: 5% 0%;
+}
+
+nav .array-inputs #a_generate {
+  background-color: transparent;
+  border: 2px solid #39ff14;
+  outline: none;
+  color: white;
+  padding: 4% 0% 0% 0%;
+  padding-left: 20%;
+  box-shadow: 0 0 5px #39ff14;
+}
+
+nav .array-inputs #a_generate:hover {
+  cursor: pointer;
+  background-color: #39ff14;
+  color: black;
+}
+
+nav .header_right {
+  display: flex;
+  flex-direction: column;
+}
+
+nav .header_right .nav-heading {
+  display: inline-block;
+  font-size: xxx-large;
+  padding: 3% 0%;
+  color: #39ff14;
+}
+
+nav .header_right .algos {
+  display: grid;
+  grid-template-columns: repeat(6, 16.66667%);
+  place-content: center;
+  padding: 2% 0%;
+}
+
+nav .header_right .algos button {
+  background-color: transparent;
+  border: 2px solid #39ff14;
+  color: white;
+  outline: none;
+  padding: 5% 0%;
+  font-size: x-large;
+  box-shadow: 0 0 5px #39ff14;
+}
+
+nav .header_right .algos button:hover {
+  background-color: #39ff14;
+  color: black;
+  cursor: pointer;
+}
+
+nav .header_right .algos .butt_locked {
+  background-color: transparent;
+  border: 2px solid #ff073a;
+  box-shadow: 0 0 5px #ff073a;
+  cursor: not-allowed;
+}
+
+nav .header_right .algos .butt_locked:hover {
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+nav .header_right .algos .butt_selected {
+  background-color: white;
+  color: green;
+  border: 2px solid #39ff14;
+}
+
+nav .header_right .algos .butt_selected:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+nav .header_right .algos .butt_unselected:hover {
+  background-color: #39ff14;
+  cursor: pointer;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  background-color: black;
+  border-top: 2px solid #39ff14;
+  border-bottom: 2px solid #39ff14;
+}
+
+section .Complexity_Containers {
+  margin-top: 20%;
+}
+
+section .Complexity_Containers .Pair_Definitions {
+  margin-top: 20%;
+}
+
+section .Complexity_Containers .Pair_Definitions p {
+  display: inline;
+}
+
+section .Complexity_Containers .Pair_Definitions p.Sub_Heading {
+  font-size: medium;
+  text-transform: none;
+}
+
+section #Info_Cont1 {
+  padding: 20% 10%;
+}
+
+section #Info_Cont1 h3 {
+  text-decoration: underline;
+  color: #39ff14;
+}
+
+section #array_container {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+}
+
+section #Info_Cont2 {
+  padding: 20% 10%;
+}
+
+section #Info_Cont2 h3 {
+  text-decoration: underline;
+  color: #39ff14;
+}
+
+.hide {
+  display: none;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: -4rem;
+}
+
+@media (max-width: 480px) {
+  nav {
+    grid-template-columns: 100%;
+    padding: 5%;
+  }
+
+  nav .array-inputs,
+  nav .header_right {
+    grid-template-columns: 100%;
+  }
+
+  section {
+    grid-template-columns: 100%;
+  }
+
+  section #Info_Cont1,
+  section #Info_Cont2 {
+    padding: 10% 5%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1250px) {
+  nav {
+    grid-template-columns: 40% 60%;
+  }
+
+  section {
+    grid-template-columns: 30% 50% 20%;
+  }
+}
