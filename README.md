@@ -19,7 +19,7 @@ Clone the repository:
 
 <h2>Bash</h2>
 
-git clone: https://github.com/Praz3030/sorting-visualizer.git </br>
+git clone: https://live-sorting-visualizer.netlify.app/ </br>
 
 Open index.html in your web browser.
 
